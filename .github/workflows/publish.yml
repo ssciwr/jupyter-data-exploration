@@ -14,7 +14,7 @@ jobs:
       - run: pip install -r requirements.txt
       - run: sudo apt update -qy && sudo apt install ffmpeg -qy
       - run: jupyter nbconvert *.ipynb --to slides --execute
-      - run: mkdir dist && mv *.slides.html dist/index.html
+      - run: mv *.slides.html dist/.
       - uses: JamesIves/github-pages-deploy-action@4.1.5
         if: github.event_name == 'push' && github.ref == 'refs/heads/master'
         name: Deploy to gh-pages

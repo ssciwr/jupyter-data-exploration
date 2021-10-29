@@ -27,6 +27,6 @@ After installing
 
 (currently incomplete)
 
-- Part 1: Python and Jupyter - [slides](https://ssciwr.github.io/jupyter-data-exploration/index.html), [notebook](todo)
-- Part 2: Pandas with toy data - [slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-toy-data.slides.html), [notebook](todo)
-- Part 3: Pandas with real data - [slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-real-data.slides.html), [notebook](todo)
+- Part 1: Python and Jupyter - [slides](https://ssciwr.github.io/jupyter-data-exploration/index.html), [notebook](index.ipynb)
+- Part 2: Pandas with toy data - [slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-toy-data.slides.html), [notebook](pandas-toy-data.ipynb)
+- Part 3: Pandas with real data - [slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-real-data.slides.html), [notebook](pandas-real-data.ipynb)

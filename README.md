@@ -21,6 +21,8 @@ After installing
 
 - if no error message appears, you are ready to start the course!
 
+![setup screenshot](setup.apng)
+
 ## Course materials
 
 (currently incomplete)

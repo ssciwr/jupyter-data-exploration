@@ -9,21 +9,17 @@ In this course we will cover basic usage of the Pandas library to download a dat
 
 You will need a computer with Python, Jupyter and pandas installed.
 
-If you don't already have this, I recommend installing Anaconda (which contains all of this and more):
+If you don't already have this, I recommend installing [Anaconda](https://www.anaconda.com/products/individual) (which contains all of this and more):
 
-### Windows installation
+After installing
 
-1. download & run the [installer](https://repo.anaconda.com/archive/Anaconda3-2021.05-Windows-x86_64.exe) (default choices should be fine, registration is optional and can be ignored)
+- open Jupyter (e.g. on Windows: `Start Menu -> Anaconda3 -> Jupyter Notebook`)
 
-2. click on Start Menu -> Anaconda3 -> Jupyter Notebook
+- create a new notebook (the web browser where Jupyter appeared, in top right click on New -> Notebook Python 3)
 
-3. web browser should open, in top right click on New -> Notebook Python 3
+- type `import pandas` and press Shift+Enter (or click `Cell -> Run Cells` in the menu)
 
-4. notebook should open: type "import pandas" and press shift+enter
-
-### MacOS/Linux installation
-
-See https://www.anaconda.com/products/individual#Downloads
+- if no error message appears, you are ready to start the course!
 
 ## Course materials
 

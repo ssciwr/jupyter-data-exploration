@@ -18,13 +18,14 @@ jobs:
             for filename in $(ls *.ipynb)
             do
                 jupyter nbconvert --execute --to slides $filename --post serve &
+                sleep 10
                 base="$(basename $filename .ipynb)"
                 pdf="${base}.pdf"
                 webpage="http://127.0.0.1:8000/${base}.slides.html/?print-pdf"
                 echo "$webpage -> $pdf"
                 google-chrome --headless --print-to-pdf=$pdf $webpage
                 killall jupyter-nbconvert
-                sleep 1
+                sleep 3
             done
       - run: mkdir dist && mv *.slides.html *.pdf dist/. && mv dist/index.slides.html dist/index.html
       - uses: JamesIves/github-pages-deploy-action@4.1.5

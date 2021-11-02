@@ -15,12 +15,16 @@ jobs:
       - run: sudo apt update -qy && sudo apt install ffmpeg -qy
       - run: jupyter nbconvert *.ipynb --to slides --execute
       - run: |
-            for filename in $(ls *.slides.html)
+            for filename in $(ls *.ipynb)
             do
-                basename="$(basename $filename .slides.html)"
-                echo "$basename"
-                google-chrome --headless --disable-gpu --print-to-pdf="$basename.pdf" $filename/?print-pdf
-                ls
+                jupyter nbconvert --to slides $filename --post serve &
+                base="$(basename $filename .ipynb)"
+                pdf="${base}.pdf"
+                webpage="http://127.0.0.1:8000/${base}.slides.html/?print-pdf"
+                echo "$webpage -> $pdf"
+                google-chrome --headless --print-to-pdf=$pdf $webpage
+                killall jupyter-nbconvert
+                sleep 1
             done
       - run: mkdir dist && mv *.slides.html *.pdf dist/. && mv dist/index.slides.html dist/index.html
       - uses: JamesIves/github-pages-deploy-action@4.1.5

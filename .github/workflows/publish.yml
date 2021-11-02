@@ -17,7 +17,7 @@ jobs:
       - run: |
             for filename in $(ls *.ipynb)
             do
-                jupyter nbconvert --to slides $filename --post serve &
+                jupyter nbconvert --execute --to slides $filename --post serve &
                 base="$(basename $filename .ipynb)"
                 pdf="${base}.pdf"
                 webpage="http://127.0.0.1:8000/${base}.slides.html/?print-pdf"

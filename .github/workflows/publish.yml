@@ -27,7 +27,7 @@ jobs:
                 killall jupyter-nbconvert
                 sleep 10
             done
-      - run: mkdir dist && mv *.slides.html *.pdf dist/. && mv dist/index.slides.html dist/index.html
+      - run: mv *.slides.html *.pdf dist/. && mv dist/index.slides.html dist/index.html
       - uses: JamesIves/github-pages-deploy-action@4.1.5
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         name: Deploy to gh-pages

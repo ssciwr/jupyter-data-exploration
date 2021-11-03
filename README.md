@@ -30,3 +30,12 @@ After installing
 - Part 1: Python and Jupyter - [online slides](https://ssciwr.github.io/jupyter-data-exploration), [pdf slides](https://ssciwr.github.io/jupyter-data-exploration/index.pdf), [notebook](index.ipynb)
 - Part 2: Pandas with toy data - [online slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-toy-data.slides.html), [pdf slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-toy-data.pdf), [notebook](pandas-toy-data.ipynb)
 - Part 3: Pandas with real data - [online slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-real-data.slides.html), [pdf slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-real-data.pdf), [notebook](pandas-real-data.ipynb)
+
+## External resources
+
+- pandas
+  - [getting started tutorials](https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html)
+  - [user guide](https://pandas.pydata.org/docs/user_guide/index.html)
+- kaggle courses
+  - [pandas](https://www.kaggle.com/learn/pandas)
+  - [data cleaning](https://www.kaggle.com/learn/data-cleaning)

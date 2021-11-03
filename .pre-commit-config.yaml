@@ -9,14 +9,10 @@ repos:
     - id: mixed-line-ending
 
   - repo: https://github.com/psf/black
-    rev: 21.8b0
+    rev: 21.10b0
     hooks:
     - id: black
-
-  - repo: https://github.com/dfm/black_nbconvert
-    rev: v0.3.0
-    hooks:
-    - id: black_nbconvert
+    - id: black-jupyter
 
   - repo: https://github.com/kynan/nbstripout
     rev: 0.5.0

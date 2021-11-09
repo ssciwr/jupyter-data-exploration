@@ -1,4 +1,4 @@
-# Data Exploration with Python and Jupyter
+# [Data Exploration with Python and Jupyter](https://ssciwr.github.io/jupyter-data-exploration)
 
 ## Course description
 
@@ -24,8 +24,6 @@ After installing
 ![setup screenshot](setup.apng)
 
 ## Course materials
-
-(currently incomplete)
 
 - Part 1: Python and Jupyter - [online slides](https://ssciwr.github.io/jupyter-data-exploration), [pdf slides](https://ssciwr.github.io/jupyter-data-exploration/index.pdf), [notebook](index.ipynb)
 - Part 2: Pandas with toy data - [online slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-toy-data.slides.html), [pdf slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-toy-data.pdf), [notebook](pandas-toy-data.ipynb)

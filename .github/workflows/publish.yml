@@ -5,7 +5,7 @@ on: push
 jobs:
   publish:
     name: Publish reveal.js slides
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v3
@@ -28,7 +28,7 @@ jobs:
                 sleep 10
             done
       - run: mv *.slides.html *.pdf dist/. && mv dist/index.slides.html dist/index.html
-      - uses: JamesIves/github-pages-deploy-action@v4.2.5
+      - uses: JamesIves/github-pages-deploy-action@v4.3.3
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         name: Deploy to gh-pages
         with:

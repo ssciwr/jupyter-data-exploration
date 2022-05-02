@@ -23,6 +23,10 @@ After installing
 
 ![setup screenshot](setup.apng)
 
+## During the course
+
+The notebooks created during the course will be automatically updated as they are edited at [jupyter-data-exploration-live](https://github.com/ssciwr/jupyter-data-exploration-live).
+
 ## Course materials
 
 - Part 1: Python and Jupyter - [online slides](https://ssciwr.github.io/jupyter-data-exploration), [pdf slides](https://ssciwr.github.io/jupyter-data-exploration/index.pdf), [notebook](index.ipynb)

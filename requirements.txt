@@ -4,5 +4,3 @@ pandas
 geopandas
 contextily
 rise
-folium
-mapclassify

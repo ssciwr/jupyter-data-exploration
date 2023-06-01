@@ -28,7 +28,7 @@ jobs:
                 sleep 10
             done
       - run: mv *.slides.html *.pdf dist/. && mv dist/index.slides.html dist/index.html
-      - uses: JamesIves/github-pages-deploy-action@v4.4.0
+      - uses: JamesIves/github-pages-deploy-action@v4.4.2
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         name: Deploy to gh-pages
         with:

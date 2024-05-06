@@ -9,7 +9,7 @@ In this course we will cover basic usage of the Pandas library to download a dat
 
 You will need a computer with Python, Jupyter and pandas installed.
 
-If you don't already have this, I recommend installing [Anaconda](https://www.anaconda.com/products/individual) (which contains all of this and more):
+If you don't already have this, I recommend installing [Anaconda](https://www.anaconda.com/download/success) (which contains all of this and more):
 
 After installing
 

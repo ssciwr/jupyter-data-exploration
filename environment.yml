@@ -1,0 +1,11 @@
+name: jupyter-data-exploration
+channels:
+- conda-forge
+dependencies:
+- python==3.12
+- pandas
+- jupyterlab
+- matplotlib
+- geopandas
+- contextily
+- openpyxl

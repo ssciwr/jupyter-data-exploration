@@ -3,8 +3,7 @@ name: Publish
 on: push
 
 jobs:
-  publish:
-    name: Publish reveal.js slides
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

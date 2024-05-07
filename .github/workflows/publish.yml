@@ -12,21 +12,8 @@ jobs:
           python-version: 3.12
       - run: pip install -r requirements.txt
       - run: sudo apt update -qy && sudo apt install ffmpeg -qy
-      - run: jupyter nbconvert *.ipynb --to slides --execute
-      - run: |
-            for filename in $(ls *.ipynb)
-            do
-                jupyter nbconvert --execute --to slides $filename --post serve &
-                sleep 30
-                base="$(basename $filename .ipynb)"
-                pdf="${base}.pdf"
-                webpage="http://127.0.0.1:8000/${base}.slides.html/?print-pdf"
-                echo "$webpage -> $pdf"
-                google-chrome --headless --print-to-pdf=$pdf $webpage
-                killall jupyter-nbconvert
-                sleep 10
-            done
-      - run: mv *.slides.html *.pdf dist/. && mv dist/index.slides.html dist/index.html
+      - run: jupyter nbconvert *.ipynb --to slides --execute --SlidesExporter.file_extension=".html" --SlidesExporter.reveal_transition="convex"
+      - run: mv *.html dist/.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: "dist/"

@@ -21,7 +21,7 @@ jobs:
       - uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: environment.yml
-      - run: jupyter execute *.ipynb
+      - run: python -m jupyter execute *.ipynb
 
   slides:
     runs-on: ubuntu-latest

@@ -34,7 +34,7 @@ jobs:
         with:
           python-version: 3.12
       - run: pip install -r requirements.txt
-      - run: jupyter nbconvert *.ipynb --to slides --execute --SlidesExporter.file_extension=".html" --SlidesExporter.reveal_transition="convex"
+      - run: jupyter nbconvert *.ipynb --config jupyter_nbconvert_config.py
       - run: mv *.html dist/.
       - uses: actions/upload-pages-artifact@v3
         with:

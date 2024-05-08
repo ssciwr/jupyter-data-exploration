@@ -16,12 +16,15 @@ jobs:
 
   test-conda:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash -leo pipefail {0}
     steps:
       - uses: actions/checkout@v4
       - uses: mamba-org/setup-micromamba@v1
         with:
           environment-file: environment.yml
-      - run: python -m jupyter execute *.ipynb
+      - run: jupyter execute *.ipynb
 
   slides:
     runs-on: ubuntu-latest

@@ -29,9 +29,9 @@ The notebooks created during the course will be automatically updated as they ar
 
 ## Course materials
 
-- Part 1: Python and Jupyter - [online slides](https://ssciwr.github.io/jupyter-data-exploration), [notebook](index.ipynb)
-- Part 2: Pandas with toy data - [online slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-toy-data.slides.html), [notebook](pandas-toy-data.ipynb)
-- Part 3: Pandas with real data - [online slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-real-data.slides.html), [notebook](pandas-real-data.ipynb)
+- Part 1: Python and Jupyter - [online slides](https://ssciwr.github.io/jupyter-data-exploration), [colab interactive notebook](https://colab.research.google.com/github/ssciwr/jupyter-data-exploration/blob/main/index.ipynb), [read-only notebook](index.ipynb)
+- Part 2: Pandas with toy data - [online slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-toy-data.slides.html), [colab interactive notebook](https://colab.research.google.com/github/ssciwr/jupyter-data-exploration/blob/main/pandas-toy-data.ipynb), [read-only notebook](pandas-toy-data.ipynb)
+- Part 3: Pandas with real data - [online slides](https://ssciwr.github.io/jupyter-data-exploration/pandas-real-data.slides.html), [colab interactive notebook](https://colab.research.google.com/github/ssciwr/jupyter-data-exploration/blob/main/pandas-real-data.ipynb), [read-only notebook](pandas-real-data.ipynb)
 
 ## External resources
 

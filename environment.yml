@@ -2,9 +2,10 @@ name: jupyter-data-exploration
 channels:
 - conda-forge
 dependencies:
-- python==3.12
+- python
 - pandas
 - jupyterlab
+- jupyterlab_rise
 - matplotlib
 - geopandas
 - contextily

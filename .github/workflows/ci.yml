@@ -1,9 +1,10 @@
-name: Publish
+name: CI
 
 on: push
 
 jobs:
-  build:
+
+  test-pypi:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -11,7 +12,25 @@ jobs:
         with:
           python-version: 3.12
       - run: pip install -r requirements.txt
-      - run: sudo apt update -qy && sudo apt install ffmpeg -qy
+      - run: jupyter execute *.ipynb
+
+  test-conda:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-file: environment.yml
+      - run: jupyter execute *.ipynb
+
+  slides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.12
+      - run: pip install -r requirements.txt
       - run: jupyter nbconvert *.ipynb --to slides --execute --SlidesExporter.file_extension=".html" --SlidesExporter.reveal_transition="convex"
       - run: mv *.html dist/.
       - uses: actions/upload-pages-artifact@v3
@@ -20,7 +39,7 @@ jobs:
 
   deploy:
     if: github.ref == 'refs/heads/main'
-    needs: build
+    needs: slides
     permissions:
       pages: write
       id-token: write

@@ -5,7 +5,6 @@ dependencies:
 - python
 - pandas
 - jupyterlab
-- jupyterlab_rise
 - matplotlib
 - geopandas
 - contextily

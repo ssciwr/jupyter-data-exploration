@@ -4,4 +4,3 @@ pandas
 geopandas
 contextily
 openpyxl
-jupyterlab-rise

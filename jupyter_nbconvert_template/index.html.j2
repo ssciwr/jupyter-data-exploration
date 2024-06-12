@@ -2,7 +2,10 @@
 
 {%- block html_head_css -%}
   {{ super() }}
-  <style type="text/css">
+  <style>
+
+    pre { overflow:auto; }
+
 	#custom-header {
 	  background-image: url("ssc-logo.svg") !important;
 	  background-repeat: no-repeat !important;

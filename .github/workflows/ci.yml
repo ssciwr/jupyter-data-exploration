@@ -21,7 +21,7 @@ jobs:
         shell: bash -leo pipefail {0}
     steps:
       - uses: actions/checkout@v4
-      - uses: mamba-org/setup-micromamba@v1
+      - uses: mamba-org/setup-micromamba@v2
         with:
           environment-file: environment.yml
       - run: jupyter execute *.ipynb

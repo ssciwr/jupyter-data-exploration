@@ -7,7 +7,7 @@ jobs:
   test-pypi:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
         with:
           python-version: 3.12
@@ -20,7 +20,7 @@ jobs:
       run:
         shell: bash -leo pipefail {0}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: mamba-org/setup-micromamba@v2
         with:
           environment-file: environment.yml
@@ -29,7 +29,7 @@ jobs:
   slides:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: actions/setup-python@v6
         with:
           python-version: 3.12
